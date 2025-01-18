@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/favicon.jpg" sizes="180x180">
+    <title>karanlıkoyun.com</title>
+    <link rel="stylesheet" href="index1.css">
+    <style>
+        .confetti {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            opacity: 0.8;
+            z-index: 9999;
+            border-radius: 50%;
+            animation: fall 5s linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+            100% {
+                transform: translateY(100vh) translateX(calc(-50vw + 100px));
+            }
+        }
+
+        .game-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .game-details {
+            display: flex;
+            gap: 20px; /* Resim ve açıklama arasındaki boşluk */
+        }
+
+        .game-info {
+            flex-grow: 1; /* Açıklamanın genişlemesini sağlar */
+        }
+
+        .game-info h3 {
+            margin-bottom: 10px;
+        }
+
+        .game-info p {
+            margin-bottom: 20px;
+        }
+
+        .game-item img {
+            width: 100%;
+            max-width: 300px; /* Resmin genişliği */
+            object-fit: cover; /* Resmin taşmaması için */
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .download-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Karanlık Oyun</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="index1.html">Ana Sayfa</a></li>
+                <li><a href="oyunlar.html">Oyunlar</a></li>
+                <li><a href="https://www.instagram.com/karanlikoyun8/" target="_blank">İnstagram</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Karanlık Oyun Dünyasına Hoş Geldiniz</h1>
+            <p>En iyi PC oyunlarını bizimle keşfedin!</p>
+            <a href="#games-section" class="explore-btn">Hemen Keşfet</a>
+        </div>
+    </section>
+
+    <!-- Oyunlar Bölümü -->
+    <section id="games-section" class="games">
+        <h2>Popüler Oyunlar</h2>
+        <div class="game-list">
+            <div class="game-item">
+                <div class="game-details">
+                    <a href="https://aylink.co/TWrwks" target="_blank">
+                        <img src="img/WhatsApp Görsel 2025-01-18 saat 23.53.01_9cbe72fc.jpg" alt="" style="width: 100%; max-width: 300px;">
+                    </a>
+                    <div class="game-info">
+                        <h3 id="oyun">Read Dead Redemption 2</h3>
+                        <p>Red Dead Redemption 2 Full v1.0.149154 indir, rdr2 türkçe pc, Ultimate Edition Tüm DLC’li HDR 4K Gerçek grafikli vahşi batı simülasyon aksiyon oyunu. Oyun, gelişmiş Ultra HD grafikleriyle gerçek bir deneyim sunar. Karakterinizi seçip, vahşi batıda aksiyon dolu bir hikayeye atılabilirsiniz. Oyun sağlıklı yaşam, seçimlere dayalı karakter gelişimi gibi birçok özellik sunar.</p>
+                        <a href="https://aylink.co/TWrwks" target="_blank" class="download-btn">Oyunu İndir</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="game-item">
+                <div class="game-details">
+                   <a href="https://aylink.co/5Wa" target="_blank"> <img src="img/rdr1.jpg" alt="" style="width: 100%; max-width: 300px;"></a>
+                    <div class="game-info">
+                        <h3>Red Dead Redemption 1</h3>
+                        <p>Red Dead Redemption 1, 2024 yapımı Red Dead Revolver‘in devam western oyunu. Üçüncü şahıs perspektifinde takip edeceğiniz oyun, orjinal remastered sürüm çıktı. ohn Marston adlı eski bir kanun kaçağını rolünü üstleneceksiniz. Konusu vahşi batı kırsalında geçen Redemption 1 oyunuyla; devlet tarafından rehin tutulan ailenizi kurtarmak için, eski yol arkadaşlarınızı feda et.. İyi Oyunlar..</p>
+                        <a href="https://aylink.co/5Wa" target="_blank" class="download-btn">Oyunu İndir</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="game-item">
+                <div class="game-details">
+                   <a href="https://aylink.co/Im2S" target="_blank"> <img src="img/ets2.jpg" alt="" style="width: 100%; max-width: 300px;"></a>
+                    <div class="game-info">
+                        <h3>Euro Truck simulator 2</h3>
+                        <p>Euro Truck Simulator 2 (ETS) 2 Türkçe Updateli’ Son Sürüm Full İndir + tüm DLC – Gold Edition PC.</p>
+                        <a href="https://aylink.co/Im2S" class="download-btn" target="_blank">Oyunu İndir</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="game-item">
+                <div class="game-details">
+                   <a href="https://aylink.co/G09oM" target="_blank"> <img src="img/godwar.jpg" alt="" style="width: 100%; max-width: 300px;"></a>
+                    <div class="game-info">
+                        <h3>God of War Ragnarök</h3>
+                        <p>God of War Ragnarok ‘un güneşi iskandinaw diyarında yükseliyor! Yapım, 2018 çıkışlı baba ve oğulun duygu yüklü macerasın anlatan ‘God of War’ efsanesinin devam sürümüdür. İskandinav mitolojisini temel alan hikayede; yarı tanrı Kratos & Atreus ikilisine eşlik edin ve Ragnarök’u durdurmanın yolunu bulmak için ölümcül dokuz diyara yelken açın. 19 eylülde bir kehanetin daha son bulacağı efsanede Kratos, kendi başının çaresine bakarken, siz kötülük tanrısı Loki’nin alametlerine cevap arayan Atreus’a yardım edeceksiniz. İyi Oyunlar..</p>
+                        <a href="https://aylink.co/G09oM" class="download-btn" target="_blank">Oyunu İndir</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="game-item">
+                <div class="game-details">
+                   <a href=" https://ay.live/F2 " target="_blank"> <img src="img/godwar2018.jpg" alt="" style="width: 100%; max-width: 300px;"></a>
+                    <div class="game-info">
+                        <h3>God of War 2018</h3>
+                        <p>Popüler PS oyunlardan biri olan God of War şimdi PC sistemleri için özel olarak tasarlanmış üstelik Türkçe dil tam destekli. Sert ve acımasız dünyada hayatta kalmak için mücadele edeceksiniz. Değişik yaratıklar ile savaşacak ve öldürün hedeflerinize doğru ilerleyin. Oğlunuz ile bu tehlikeli mücadelede onu koruyun ve savaşmasını öğretin. God of War PC oyununu sizlerde oynayarak karanlık dünyada yolculuk etmeye ne dersin?.</p>
+                        <a href=" https://ay.live/F2 " class="download-btn" target="_blank">Oyunu İndir</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="game-item">
+                <div class="game-details">
+                   <a href=" https://ay.live/xO7" target="_blank"> <img src="img/the last of.jpg" alt="" style="width: 100%; max-width: 300px;"></a>
+                    <div class="game-info">
+                        <h3>The Last of Us Part 1 İndir – Full PC Türkçe v1.1.3.1 + 2 DLC
+                        </h3>
+                        <p> The Last of Us Part 1, 2013 yapımı oyun PC5 konsoluna özel olarak yeniden geliştirilen modern düzenlemesidir. Oyun dünyasının ve hayranlarının merakla beklediği serinin birinci halkası, aslına sadık kalınarak ve en son motor teknolojisi uygulanarak tekrar baştan yaratıldı. Modern oynayış özelliği, kontrolleri ve erişe bilirlik alternatifiyle, unutulmaz hikayenin anlatımını Ellie&Riley ikilisinin hayatını derinden etkileyen Left Behind kısmında keşfedecek… İyi Oyunlar..</p>
+                        <a href=" https://ay.live/xO7" class="download-btn" target="_blank">Oyunu İndir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+            document.body.appendChild(confetti);
+
+            setTimeout(() => {
+                confetti.remove();
+            }, 5000);
+        }
+
+        setInterval(createConfetti, 100); // Her 100 milisaniyede bir yeni konfeti yaratılıyor
+
+        // Sayfa aşağı kaydırma işlemi için smooth scroll özelliği
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background: #1b1b1b;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff; /* Logo yazı rengi beyaz yapıldı */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #fff; /* Menü ikon rengi beyaz yapıldı */
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: #fff; /* Menü yazı rengi beyaz yapıldı */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #ccc; /* Hover durumunda beyazın daha açık bir tonu */
+}
+
+/* Responsive Menu */
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1b1b1b;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 200px;
+    }
+
+    .menu li {
+        margin: 15px 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('background-image.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #fff; /* Başlık rengi beyaz yapıldı */
+    margin-bottom: 20px;
+    animation: soft-glow 2s infinite alternate;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #fff; /* Alt başlık rengi beyaz yapıldı */
+}
+
+.explore-btn {
+    background-color: #fff; /* Buton arka planı beyaz yapıldı */
+    color: #121212; /* Buton yazı rengi siyah yapıldı */
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #ccc; /* Hover durumunda açık gri */
+}
+
+/* Yumuşak Parlama Efekti */
+@keyframes soft-glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff; /* Parlama efekti beyaz yapıldı */
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff; /* Parlama efekti beyaz yapıldı */
+    }
+}
+
+
+#oyun{
+    color: #dd0000;
+}
+
+/* Oyunu İndir Butonu */
+.download-btn {
+    display: inline-block;
+    background-color: #28a745; /* Yeşil arka plan rengi */
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #218838; /* Hover durumunda daha koyu bir yeşil */
+}
+
+.download-btn::before {
+    content: '\21E3'; /* Unicode ile indirme simgesi */
+    margin-right: 10px;
+}
